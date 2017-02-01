@@ -15,7 +15,7 @@ public class EsPalindromo {
 		// PORCESO
 		palabra = LeerCadena();
 		
-		salida = RecorrerPalabra(palabra,alreves);
+		salida = esPalindromo(palabra,alreves);
 		
 		// SALIDA
 		System.out.println(salida);
@@ -36,7 +36,7 @@ public class EsPalindromo {
 		
 	}
 	
-	public static boolean RecorrerPalabra (String palabra, String alreves){
+	public static boolean esPalindromo (String palabra, String alreves){
 
 		String modificado = palabra.replaceAll(" ","").toLowerCase();
         int i=0;
@@ -49,16 +49,4 @@ public class EsPalindromo {
         return true;
 	}
 	
-	public static boolean esPalindromo(String palabra, String alreves){
-		boolean esCorrecto;
-	if (alreves == palabra){
-		esCorrecto = true;
-		System.out.println(esCorrecto);
-	}
-	else{
-		esCorrecto = false;
-		System.out.println(esCorrecto);
-	}
-	return esCorrecto;
-	}
 }

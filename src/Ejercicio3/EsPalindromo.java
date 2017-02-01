@@ -20,7 +20,7 @@ public class EsPalindromo {
 		// SALIDA
 		System.out.println(salida);
 		
-		// salida= esPalindromo(palabra, alreves);
+
 
 	}
 	public static String LeerCadena(){
@@ -37,7 +37,9 @@ public class EsPalindromo {
 	}
 	
 	public static boolean esPalindromo (String palabra, String alreves){
-
+		
+		//Quitar espacios y convertirlo a minusculas para hacer las comparaciones
+		
 		String modificado = palabra.replaceAll(" ","").toLowerCase();
         int i=0;
         while (i < modificado.length() / 2)
